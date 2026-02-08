@@ -1,88 +1,83 @@
 import { Link } from "react-router-dom";
 
-// Top section (Featured + side)
+// Top section (Featured + 2 side cards)
 const TOP_POSTS = [
   {
-    slug: "us-interference-iran-protests-2026-analysis",
+    slug: "venezuela-socialist-party-fracture-2026",
     title:
-      "Allegations of U.S. Interference in Iran’s Protests: What’s Happening and Why It Matters",
-    date: "Jan 18, 2026",
+      "Venezuela’s Socialist Party Faces Deepening Internal Fractures Amid Political Upheaval",
+    date: "Feb 8, 2026",
     author: "Mark Jason",
     minutes: 4,
     excerpt:
-      "Iran’s leadership is again accusing the United States of fueling unrest, while U.S. officials insist they support peaceful protest and human rights. Here’s what we know so far—and what remains contested.",
-    tag: "geopolitics",
+      "Reports indicate significant distrust, desertions, and declining grassroots support within Venezuela’s ruling party as economic pain and political uncertainty grow.",
+    tag: "politics",
     image:
-      "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1400&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCLBcpsBlOQJIT9YtMnSfXysIHJBzimMn0Vg&s",
   },
   {
-    slug: "ice-officers-minneapolis-protests-injunction-2026",
-    title:
-      "ICE Officers in Minneapolis Under Scrutiny After Protest Clashes and Federal Court Restrictions",
-    date: "Jan 18, 2026",
+    slug: "bitcoin-market-volatility-2026",
+    title: "Bitcoin Loses Trump-Era Gains as Market Volatility Signals Crypto Uncertainty",
+    date: "Feb 7, 2026",
     author: "Mark Jason",
     minutes: 4,
     excerpt:
-      "A federal judge has issued major restrictions on ICE tactics in Minnesota after protests and allegations of excessive force, raising new concerns about how immigration enforcement is operating in Minneapolis.",
-    tag: "us-news",
+      "Bitcoin’s price has given back its post-election rally gains, reflecting broader market volatility and investor risk aversion across digital assets.",
+    tag: "finance",
     image:
-      "https://time.com/redesign/_next/image/?url=https%3A%2F%2Fapi.time.com%2Fwp-content%2Fuploads%2F2026%2F01%2FGettyImages-2254678149.jpg%3Fquality%3D85%26w%3D1024&w=3840&q=75",
+      "https://images.unsplash.com/photo-1621504450181-5d356f61d307?auto=format&fit=crop&w=1400&q=80",
   },
   {
     slug: "jodie-foster-alexandra-hedison-divorce-rumor",
     title:
       "Rumors Swirl About a Possible Jodie Foster & Alexandra Hedison Divorce — But Nothing Is Confirmed",
-    date: "Jan 18, 2026",
+    date: "Feb 9, 2026",
     author: "Mark Jason",
     minutes: 4,
     excerpt:
       "Social media rumors claim Jodie Foster and Alexandra Hedison may be splitting up, but there has been no official confirmation—and the real reason behind any alleged separation remains unknown.",
     tag: "celebrities",
-    image:
-      "https://images.hellomagazine.com/horizon/square/fe54de169346-gettyimages-1327372248.jpg",
+    image: "https://people.com/thmb/x4s8xOnMpQfYwBd20H_lqnjS0nQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/jodie-foster-alexandra-hedison-100625-5fa32e1232c942b6a60ddc2e913f6b88.jpg",
   },
 ];
 
-// Latest section ONLY
+// Latest section (remaining 3)
 const LATEST_POSTS = [
   {
-    slug: "kids-online-safety-laws-2026-us",
-    title:
-      "Kids Online Safety Becomes a Major U.S. Flashpoint as New Laws and Legal Battles Grow in 2026",
-    date: "Jan 18, 2026",
+    slug: "nfl-hall-of-fame-and-international-games-2026",
+    title: "NFL News: Hall of Fame Class Highlights and Historic International Games Ahead",
+    date: "Feb 8, 2026",
     author: "Mark Jason",
     minutes: 4,
     excerpt:
-      "As 2026 begins, child online safety policies are becoming a national priority in the U.S., with growing legal fights over how far governments can go to regulate platforms and protect minors.",
-    tag: "kids",
-    image:
-      "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1400&q=80",
-  },
-  {
-    slug: "venezuela-maduro-political-prisoners-release-2026",
-    title:
-      "Venezuela Under Maduro Faces Renewed Pressure as Rights Group Reports Political Prisoner Releases",
-    date: "Jan 18, 2026",
-    author: "Mark Jason",
-    minutes: 4,
-    excerpt:
-      "A Venezuelan rights group says 139 political prisoners have been released since early January, raising questions about whether Maduro’s government is responding to pressure—or simply reshaping its political image.",
-    tag: "politics",
-    image:
-      "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1400&q=80",
-  },
-  {
-    slug: "nfl-coaching-carousel-2026-harbaugh-giants-stefanski-falcons",
-    title:
-      "NFL Coaching Carousel Heats Up: Giants Hire John Harbaugh as Falcons Name Kevin Stefanski",
-    date: "Jan 18, 2026",
-    author: "Mark Jason",
-    minutes: 4,
-    excerpt:
-      "The NFL offseason is already delivering major moves as the New York Giants sign John Harbaugh and the Atlanta Falcons hire Kevin Stefanski, signaling big rebuilds for both franchises.",
+      "The 2026 NFL Hall of Fame class was announced and the league expands its global footprint with planned games in Australia and Europe.",
     tag: "sports",
     image:
-      "https://news.ssbcrack.com/wp-content/uploads/2026/01/NFL-Coaching-Carousel-Heats-Up-with-Changes-Across-Multiple-Teams-860x573.jpeg",
+      "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1400&q=80",
+  },
+  {
+    slug: "us-trade-global-investment-shifts-2026",
+    title: "U.S. Trade and Market Trends: Global Investment Shifts & Import Dynamics",
+    date: "Feb 6, 2026",
+    author: "Mark Jason",
+    minutes: 4,
+    excerpt:
+      "Key shifts continue in global trade strategies as nations pursue diversified sourcing and refine economic alliances.",
+    tag: "economy",
+    image:
+      "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1400&q=80",
+  },
+  {
+    slug: "biotech-healthcare-ipo-2026",
+    title: "Major Biotech Firm Eikon Therapeutics Raises $381 Million in Series IPO",
+    date: "Feb 5, 2026",
+    author: "Mark Jason",
+    minutes: 4,
+    excerpt:
+      "Eikon Therapeutics’ successful IPO highlights rising investor confidence in synthetic biology and biotech innovation.",
+    tag: "health",
+    image:
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80",
   },
 ];
 
@@ -100,14 +95,13 @@ function MetaRow({ author, date, minutes }) {
 
 function TagChip({ tag }) {
   const map = {
-    geopolitics: "bg-indigo-50 text-indigo-700 ring-indigo-100",
-    "us-news": "bg-emerald-50 text-emerald-700 ring-emerald-100",
-    celebrities: "bg-fuchsia-50 text-fuchsia-700 ring-fuchsia-100",
-    kids: "bg-amber-50 text-amber-800 ring-amber-100",
     politics: "bg-rose-50 text-rose-700 ring-rose-100",
+    finance: "bg-indigo-50 text-indigo-700 ring-indigo-100",
+    celebrities: "bg-fuchsia-50 text-fuchsia-700 ring-fuchsia-100",
     sports: "bg-cyan-50 text-cyan-800 ring-cyan-100",
+    economy: "bg-amber-50 text-amber-800 ring-amber-100",
+    health: "bg-emerald-50 text-emerald-700 ring-emerald-100",
   };
-
   const cls = map[tag] ?? "bg-slate-100 text-slate-700 ring-slate-200";
 
   return (
@@ -138,14 +132,13 @@ export default function BlogList() {
 
   return (
     <div className="space-y-10">
-      {/* Title row */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
             Today’s picks
           </h2>
           <p className="mt-2 max-w-2xl text-slate-600">
-            Explore today’s top stories across politics, entertainment, and global events — curated to keep you informed in minutes.
+            Fresh headlines across politics, crypto, entertainment, sports, trade, and health.
           </p>
         </div>
 
@@ -154,14 +147,13 @@ export default function BlogList() {
             <span className="text-slate-400">⌘</span>
             <input
               className="w-full bg-transparent text-sm outline-none placeholder:text-slate-400"
-              placeholder="Search stories"
+              placeholder="Search (UI only)"
               disabled
             />
           </div>
         </div>
       </div>
 
-      {/* Featured + side cards */}
       <section className="grid gap-6 lg:grid-cols-5">
         <Link
           to={`/blog/${featured.slug}`}
@@ -237,7 +229,6 @@ export default function BlogList() {
         </div>
       </section>
 
-      {/* Latest section */}
       <div className="h-px w-full bg-slate-200" />
 
       <section className="space-y-3">
@@ -267,9 +258,7 @@ export default function BlogList() {
                     {post.title}
                   </h4>
 
-                  <p className="mt-2 text-slate-600 line-clamp-2">
-                    {post.excerpt}
-                  </p>
+                  <p className="mt-2 text-slate-600 line-clamp-2">{post.excerpt}</p>
 
                   <div className="mt-4">
                     <MetaRow author={post.author} date={post.date} minutes={post.minutes} />
@@ -294,6 +283,7 @@ export default function BlogList() {
     </div>
   );
 }
+
 
 
 
